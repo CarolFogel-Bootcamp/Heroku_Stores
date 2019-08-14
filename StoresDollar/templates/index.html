@@ -18,8 +18,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="index.html">US Food Deserts - Dollar / Grocery Stores
-      Stores</a>
+    <a class="navbar-brand" href="index.html">US Food Deserts - Dollar / Grocery Stores</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
       aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     </button>
@@ -178,18 +177,23 @@
 
     <br>
     <h4>Urban / Rural Grocery Stores vs. Dollar Stores (Current and Predicted)</h4>
-    <p>The top 3 urban/rural counties with the highest number of people without access to fresh fruit and vegetables are
+    <p>The top 3 urban / rural counties with the highest number of people without access to fresh fruit and vegetables are
       displayed.
     </p>
 
     <div class="row">
       Urban / Rural Selection
-      <form name="UrbanRuralDropdownList">
+      <br>
+      <select id="urb_rural" class="custom-select col-md-3" onchange="optionChanged(this.value)">
+        <option value="urban">Urban</option>
+        <option value="rural">Rural</option>
+      </select>
+      <!-- <form name="UrbanRuralDropdownList">
         <select id="urb_rural" class="custom-select col-md-3" onchange="optionChanged(this.value)">
           <option value="urban">Urban</option>
           <option value="rural">Rural</option>
         </select>
-      </form>
+      </form> -->
     </div>
 </body>
 
