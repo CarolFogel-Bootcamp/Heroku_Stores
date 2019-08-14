@@ -18,7 +18,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="index.html">Food Deserts Across the United States - Dollar Stores vs Grocery
+    <a class="navbar-brand" href="index.html">US Food Deserts - Dollar / Grocery Stores
       Stores</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
       aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,8 +137,8 @@
     </div>
 
     <br>
-
-    <p>Urban / Rural areas ojadso fj jfoisj aiomjsjfoi sjfopsjpo fspojfpo sposj fpjspdofjspoj
+    <h4>Urban / Rural Grocery Stores</h4>
+    <p>fj jfoisj aiomjsjfoi sjfopsjpo fspojfpo sposj fpjspdofjspoj
       fpsjpojdspofspofjpsojfposjpofjsfsd
       ojadso fj jfoisj aiomjsjfoi sjfopsjpo fspojfpo sposj fpjspdofjspoj fpsjpojdspofspofjpsojfposjpofjsfsdojadso fj
       jfoisj aiomjsjfoi sjfopsjpo fspojfpo sposj fpjspdofjspoj fpsjpojdspofspofjpsojfposjpofjsfsd
@@ -175,7 +175,17 @@
       </div>
       <div class="col-md-1"> </div>
     </div>
+
+    <form name="UrbanRuralDropdownList">
+      Urban / Rural Selection
+      <select id="urb_rural" class="custom-select col-md-3" onchange="optionChanged(this.value)">
+        <option value="urban">Urban</option>
+        <option value="rural">Rural</option>
+      </select>
+    </form>
 </body>
+
+<script type="text/javascript" src="../static/js/app.js"></script>
 
 <footer>
   <p style="font-size:.75em; color:#808080; text-align: center">Design & Developed by Bic Vu, Monica L., and Carol
