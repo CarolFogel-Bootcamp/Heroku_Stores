@@ -55,14 +55,11 @@
             <a style="color:black;" class="nav-link js-scroll-trigger" href="#maps">Maps</a>
           </li>
           <li class="nav-item">
-            <a style="color:black;" class="nav-link js-scroll-trigger" href="#about">Analysis</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a style="color:black;" class="nav-link js-scroll-trigger" href="#predictions">Predictions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li> -->
+            <a style="color:black;" class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -148,6 +145,7 @@
           <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-lg-10 col-sm-6 portfolio-item">
@@ -183,27 +181,14 @@
             var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);  
           </script>
-
-          <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-            </a> -->
         </div>
+      </div>
 
+      <br>
+
+      <div class="row">
         <div class="col-md-1"></div>
         <div class="col-lg-10 col-sm-6 portfolio-item">
-          <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a> -->
           <div class="portfolio-caption">
             <h4>Dollar Store Map</h4>
             <p class="text-muted">The map illustrates the number of dollar stores nationwide.</p>
@@ -212,17 +197,13 @@
           <!-- Link to Dollar Store Map goes here !!!! -->
 
         </div>
+      </div>
 
+      <br>
+
+      <div class="row">
         <div class="col-md-1"></div>
         <div class="col-lg-10 col-sm-6 portfolio-item">
-          <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a> -->
           <div class="portfolio-caption">
             <h4>Dollar Store Trends</h4>
             <p class="text-muted">The map illustrates the number of dollar stores from 2007 to 2018.</p>
@@ -254,78 +235,97 @@
             var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);             
           </script>
-
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
+  <!-- Predictions -->
+  <section class="bg-light page-section" id="predictions">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Predictions</h2>
+          <h3 class="section-subheading text-muted">The following graphics display the predicted number of grocery
+            stores.</h3> -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-lg-10 col-sm-6 portfolio-item">
           <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
+            <h4>Urban / Rural Grocery Stores vs. Dollar Stores (Current and Predicted)</h4>
+            <p class="text-muted">The top 3 urban / rural counties with the highest number of people without access to
+              fresh fruit and vegetables
+              are displayed.</p>
+          </div>
+
+          <br>
+
+          <p>Urban / Rural Selection </p>
+          <select id="urb_rural" class="custom-select col-md-3" onchange="optionChanged(this.value)">
+            <option value="urban">Urban</option>
+            <option value="rural">Rural</option>
+          </select>
+
+          <!-- Link to Urban / Rural Graph goes here OR is access via Routes ???? -->
+        </div>
+      </div>
+
+      <br>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Our Team</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <h4>Bic Vu</h4>
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-paint-brush fa-stack-1x fa-inverse"></i>
+            </span>
+            <p class="text-muted">Lead Designer</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <h4>Monica Linsangan</h4>
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-globe-americas fa-stack-1x fa-inverse"></i>
+            </span>
+            <p class="text-muted">Maps</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <h4>Carol Fogel</h4>
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-download fa-stack-1x fa-inverse"></i>
+            </span>
+            <p class="text-muted">xxxxx</p>
           </div>
         </div>
       </div>
+      <!-- <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        </div>
+      </div> -->
+    </div>
   </section>
-
-
-  <br>
-  <h2>Urban / Rural Grocery Stores vs. Dollar Stores (Current and Predicted)</h2>
-  <p>The top 3 urban / rural counties with the highest number of people without access to fresh fruit and vegetables
-    are displayed.
-  </p>
-
-  <!-- <div class="row"> -->
-  <p>Urban / Rural Selection </p>
-  <br>
-  <select id="urb_rural" class="custom-select col-md-3" onchange="optionChanged(this.value)">
-    <option value="urban">Urban</option>
-    <option value="rural">Rural</option>
-  </select>
-  <!-- </div> -->
 </body>
 
 <script type="text/javascript" src="../static/js/app.js"></script>
-
-<br>
-<footer>
-  <p style="font-size:.75em; color:#808080; text-align: center">Design & Developed by Bic Vu, Monica Linsangan, and
-    Carol Fogel, 2019.</p>
-  <br>
-</footer>
 
 </html>
