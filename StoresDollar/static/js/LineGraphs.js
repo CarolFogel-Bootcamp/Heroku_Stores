@@ -2,8 +2,9 @@ function GroceryStoresDollarStoresByCounty(selectedState, selectedCounty) {
 
     setTimeout(function () {
 
-        // from .js data sets
+        // from .js data set
         var data = results;
+
         var filtered_data = data.filter(d => (d.State === selectedState) && (d.County === selectedCounty))
 
         var years = filtered_data.map(a => a.Year)
@@ -98,13 +99,7 @@ function GroceryStoresDollarStoresByCounty(selectedState, selectedCounty) {
             type: 'scatter'
         };
 
-        var verticalLine = {
-            x: [2010, 40000],
-            y: [2010, 80000],
-            type: 'scatter'
-          };
-
-        var graphdata2 = [Population, FoodDesertPopulation, verticalLine];
+        var graphdata2 = [Population, FoodDesertPopulation];
 
         var layout2 = {
             showlegend: true,
@@ -120,7 +115,20 @@ function GroceryStoresDollarStoresByCounty(selectedState, selectedCounty) {
             },
             yaxis: {
 
-            }
+            },
+            shapes: {
+                type: 'line',
+                x0: 2010,
+                y0: 20000,
+                x1: 2010,
+                // y1: Population.y[Population.x.indexOf(2010)],
+                y1: Math.max(...Population.y),
+                line: {
+                  color: 'grey',
+                  width: 1.5,
+                  dash: 'dot'
+                }
+              },
         };
 
         Plotly.newPlot('graph2', graphdata2, layout2, { displayModeBar: false });

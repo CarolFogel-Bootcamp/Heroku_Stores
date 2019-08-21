@@ -222,6 +222,7 @@
       </div>
 
       <br>
+
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10 portfolio-item">
@@ -259,6 +260,7 @@
       </div>
 
       <br>
+
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10 portfolio-item">
@@ -294,36 +296,28 @@
           </script>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Predictions -->
-  <section class="bg-light page-section" id="predictions">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Predictions</h2>
-          <h3 class="section-subheading text-muted">The following graphics display the predicted number of grocery
-            stores.</h3>
-        </div>
-      </div>
+      <br>
 
+      <!-- Maps by County -->
       <div class="row">
+        <div class="col-sm-1"></div>
         <div class="col-sm-10 portfolio-item">
           <div class="portfolio-caption">
-            <h4>Predicted Info </h4>
-            <p class="text-muted">Sentence about predicted information</p>
+            <h4>Charts by County</h4>
           </div>
 
+          <p class="text-muted">Please select State / County</p>
+
           <form name="statedropdownList">
-            Select a State:
+            State:
             <select name="StateSelection" id="stateDropdown" class="statesel">
               <option value="" selected="selected"></option>
             </select>
           </form>
 
           <form name="countydropdownList">
-            Select a County:
+            County:
             <select name="CountySelection" id="countyDropdown" class="countysel">
               <option value="" selected="selected"></option>
             </select>
@@ -344,12 +338,95 @@
 
         <div class="col-sm-6 portfolio-item">
           <div class="portfolio-caption">
-            <h4>Population vs. Food Desert Population</h4>
+            <h4>Population - General vs. Food Desert</h4>
           </div>
 
           <div id="graph2" style="padding-right:30px; width:100%;"></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Predictions -->
+  <section class="bg-light page-section" id="predictions">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Predictions</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 portfolio-item">
+          <div class="portfolio-caption">
+            <h4>Grocery Store per Capita</h4>
+            <p class="text-muted">mfi9ai weopsopdfmop mdjm omsfjopdfjposdmfopdsjfpom fjjopdsfjopsjdfdsf</p>
+          </div>
+
+          <div class='tableauPlaceholder' id='viz1566411680051' style='position: relative'><noscript><a href='#'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;DollarGrocery_perCap&#47;GroceryStoreperCapita&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='DollarGrocery_perCap&#47;GroceryStoreperCapita' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;DollarGrocery_perCap&#47;GroceryStoreperCapita&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' /></object></div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1566411680051');
+            var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 portfolio-item">
+          <div class="portfolio-caption">
+            <h4>Dollar Store per Capita</h4>
+            <p class="text-muted">The map illustrates the number of dollar stores nationwide.</p>
+          </div>
+          <div class='tableauPlaceholder' id='viz1566412671583' style='position: relative'><noscript><a href='#'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;DollarGrocery_perCap&#47;DollarStoreperCapita&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='DollarGrocery_perCap&#47;DollarStoreperCapita' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;DollarGrocery_perCap&#47;DollarStoreperCapita&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' /></object></div>
+          <script type='text/javascript'>                    var divElement = document.getElementById('viz1566412671583');
+            var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);   
+          </script>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Methodology -->
@@ -397,7 +474,7 @@
               <i class="fas fa-paint-brush fa-stack-1x fa-inverse"></i>
             </span>
             <h4>Bic Vu</h4>
-            <p class="text-muted">Lead Designer, Machine Learning</p>
+            <p class="text-muted">Lead Designer, Machine Learning, Python</p>
           </div>
         </div>
         <div class="col-sm-4">
@@ -407,7 +484,7 @@
               <i class="fas fa-globe-americas fa-stack-1x fa-inverse"></i>
             </span>
             <h4>Monica Linsangan</h4>
-            <p class="text-muted">Maps, Charts</p>
+            <p class="text-muted">Maps/Charts, Tableau</p>
           </div>
         </div>
         <div class="col-sm-4">
@@ -417,7 +494,7 @@
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
             <h4>Carol Fogel</h4>
-            <p class="text-muted">Website, D3</p>
+            <p class="text-muted">Website, Javascript</p>
           </div>
         </div>
       </div>
