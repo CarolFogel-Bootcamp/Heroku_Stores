@@ -98,7 +98,13 @@ function GroceryStoresDollarStoresByCounty(selectedState, selectedCounty) {
             type: 'scatter'
         };
 
-        var graphdata2 = [Population, FoodDesertPopulation];
+        var verticalLine = {
+            x: [2010, 40000],
+            y: [2010, 80000],
+            type: 'scatter'
+          };
+
+        var graphdata2 = [Population, FoodDesertPopulation, verticalLine];
 
         var layout2 = {
             showlegend: true,
@@ -112,19 +118,6 @@ function GroceryStoresDollarStoresByCounty(selectedState, selectedCounty) {
                 t: 10,
                 pad: 4
             },
-            shapes: 
-                //line vertical
-                {
-                  type: 'line',
-                  x0: 2010,
-                  y0: 40000,
-                  x1: 2010,
-                  y1: 80000,
-                  line: {
-                    color: 'rgb(55, 128, 191)',
-                    width: 3
-                  }
-                },
             yaxis: {
 
             }
