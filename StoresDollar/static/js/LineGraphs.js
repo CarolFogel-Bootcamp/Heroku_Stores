@@ -52,7 +52,7 @@ function GroceryStoresDollarStoresByCounty(selectedState, selectedCounty) {
     var layout = {
         showlegend: true,
         height: 500,
-        width: 1000,
+        width: 500,
         yaxis: {
             title: 'Count',
             titlefont: {
@@ -104,7 +104,7 @@ function GroceryStoresDollarStoresByCounty(selectedState, selectedCounty) {
     var layout2 = {
         showlegend: true,
         height: 500,
-        width: 1000,
+        width: 500,
         yaxis: {
             title: 'Count',
             titlefont: {
