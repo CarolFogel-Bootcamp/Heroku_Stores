@@ -43,7 +43,5 @@ filterbystate.onchange = function () {
 
     // Call function to draw graphs
     GroceryStoresDollarStoresByCounty(state_sel_value, county_sel_value);
-
-
   }
 }
