@@ -10,3 +10,8 @@ Skills Used:
 * Tableau
 
 https://dollarstores.herokuapp.com/
+
+My role:
+* Update website template to conform to project format
+* Create dropdown selection for charts using Javascript
+* Create charts using Plotly
