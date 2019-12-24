@@ -1,6 +1,6 @@
 ## Machine Learning Final Group Project
  
-We analyzed the impact that dollar stores are having on food deserts.
+This Final Group Project analyzes the impact that dollar stores are having on food deserts.
 
 Skills Used:
 * Machine Learning
@@ -12,6 +12,6 @@ Skills Used:
 https://dollarstores.herokuapp.com/
 
 My role:
-* Update website template to conform to project format
+* Update HTML within website template to conform to our project format
 * Create dropdown selection for charts using Javascript
 * Create charts using Plotly
